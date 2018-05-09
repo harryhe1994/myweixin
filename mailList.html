@@ -6,12 +6,205 @@
 		<title></title>
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<link href="css/mui.min.css" rel="stylesheet" />
+		<script src="js/mui.min.js"></script>
+		<link href="css/index.css" rel="stylesheet" />
+		<style>
+			.mui-bar {
+				-webkit-box-shadow: none;
+				box-shadow: none;
+			}
+			
+			.myList img {
+				vertical-align: middle;
+				width: 30px;
+				height: 30px;
+			}
+			
+			.list-bar {
+				position: fixed;
+				right: 5px;
+				z-index: 999;
+			}
+			
+			.list-bar a {
+				text-align: center;
+				display: block;
+				font-size: 18px;
+				line-height: 18px;
+				color: #222222;
+				margin-top: 5px;
+			}
+		</style>
+
 	</head>
 
 	<body>
-		<script src="js/mui.min.js"></script>
+		<div class="mui-content">
+			<div id="list">
+				<div class="list-bar">
+					<a href="#up">↑</a>
+					<a href="#up">☆</a>
+					<a href="#A">A</a>
+					<a href="#B">B</a>
+					<a href="#C">C</a>
+					<a href="#D">D</a>
+					<a href="#E">E</a>
+					<a href="#F">F</a>
+					<a href="#G">G</a>
+					<a href="#H">H</a>
+					<a href="#I">I</a>
+					<a href="#J">J</a>
+					<a href="#K">K</a>
+					<a href="#L">L</a>
+					<a href="#M">M</a>
+					<a href="#N">N</a>
+					<a href="#O">O</a>
+					<a href="#P">P</a>
+					<a href="#Q">Q</a>
+					<a href="#R">R</a>
+					<a href="#S">S</a>
+					<a href="#T">T</a>
+					<a href="#U">U</a>
+					<a href="#V">V</a>
+					<a href="#W">W</a>
+					<a href="#X">X</a>
+					<a href="#Y">Y</a>
+					<a href="#Z">Z</a>
+					<a href="#ZZ">#</a>
+				</div>
+				<div class="list-inner">
+					<ul class="mui-table-view myList" id="up">
+						<li class="mui-table-view-cell" title="新的朋友"><img src='img/icon1.jpg'> 新的朋友</li>
+						<li class="mui-table-view-cell" title="群聊"><img src="img/icon2.jpg"> 群聊</li>
+						<li class="mui-table-view-cell" title="标签"><img src="img/icon3.jpg"> 标签</li>
+						<li class="mui-table-view-cell" title="公众号"><img src="img/icon4.jpg"> 公众号</li>
+						<li id="A" class="mui-table-view-divider">A</li>
+						<li class="mui-table-view-cell" title="阿和"><img src='img/1.jpg'> 阿和</li>
+						<li class="mui-table-view-cell" title="阿恒"><img src='img/2.jpg'> 阿恒</li>
+						<li class="mui-table-view-cell" title="阿花"><img src='img/3.jpg'> 阿花</li>
+						<li class="mui-table-view-cell" title="阿里"><img src='img/4.jpg'> 阿里</li>
+						<li id="B" class="mui-table-view-divider">B</li>
+						<li class="mui-table-view-cell" title="半边"><img src='img/5.jpg'> 半边</li>
+						<li class="mui-table-view-cell" title="半个"><img src='img/6.jpg'> 半个</li>
+						<li class="mui-table-view-cell" title="不安"><img src='img/7.jpg'> 不安</li>
+						<li id="C" class="mui-table-view-divider">C</li>
+						<li class="mui-table-view-cell" title="长白山"><img src='img/8.jpg'> 长白山</li>
+						<li class="mui-table-view-cell" title="长龙嘉"><img src='img/9.jpg'> 长龙嘉</li>
+						<li class="mui-table-view-cell" title="常花源"><img src='img/10.jpg'> 常花源</li>
+						<li id="D" class="mui-table-view-divider">D</li>
+						<li class="mui-table-view-cell" title="大吗"><img src='img/1.jpg'> 大吗</li>
+						<li class="mui-table-view-cell" title="大姐"><img src='img/2.jpg'> 大姐</li>
+						<li class="mui-table-view-cell" title="大哥"><img src='img/3.jpg'> 大哥</li>
+						<li id="E" class="mui-table-view-divider">E</li>
+						<li class="mui-table-view-cell" title="二笔"><img src='img/4.jpg'> 二笔</li>
+						<li id="F" class="mui-table-view-divider">F</li>
+						<li class="mui-table-view-cell" title="face"><img src='img/5.jpg'> face</li>
+						<li id="G" class="mui-table-view-divider">G</li>
+						<li class="mui-table-view-cell" title="桂桂"><img src='img/6.jpg'> 桂桂</li>
+						<li class="mui-table-view-cell" title="gg"><img src='img/7.jpg'> gg</li>
+						<li id="H" class="mui-table-view-divider">H</li>
+						<li class="mui-table-view-cell" title="航海"><img src='img/6.jpg'> 航海</li>
+						<li class="mui-table-view-cell" title="hanh"><img src='img/7.jpg'> hanh</li>
+						<li id="I" class="mui-table-view-divider">I</li>
+						<li class="mui-table-view-cell" title="Ian"><img src='img/1.jpg'> Ian</li>
+						<li class="mui-table-view-cell" title="illi"><img src='img/2.jpg'> illi</li>
+						<li class="mui-table-view-cell" title="Iyi"><img src='img/3.jpg'> Iyi</li>
+						<li id="J" class="mui-table-view-divider">J</li>
+						<li class="mui-table-view-cell" title="Joy"><img src='img/1.jpg'> Joy</li>
+						<li class="mui-table-view-cell" title="Jason"><img src='img/2.jpg'> Jason</li>
+						<li class="mui-table-view-cell" title="Jame"><img src='img/3.jpg'> Jame</li>
+						<li id="K" class="mui-table-view-divider">K</li>
+						<li class="mui-table-view-cell" title="Kyle"><img src='img/1.jpg'> Kyle</li>
+						<li class="mui-table-view-cell" title="Kelvin"><img src='img/2.jpg'> Kevin</li>
+						<li class="mui-table-view-cell" title="Kelvin"><img src='img/3.jpg'> Kelvin</li>
+						<li id="L" class="mui-table-view-divider">L</li>
+						<li class="mui-table-view-cell" title="Lance"><img src='img/1.jpg'> Lance</li>
+						<li class="mui-table-view-cell" title="Lan"><img src='img/2.jpg'> Lan</li>
+						<li class="mui-table-view-cell" title="Long"><img src='img/3.jpg'> Long</li>
+						<li id="M" class="mui-table-view-divider">M</li>
+						<li class="mui-table-view-cell" title="Mike"><img src='img/1.jpg'> Mike</li>
+						<li class="mui-table-view-cell" title="Mark"><img src='img/2.jpg'> Mark</li>
+						<li class="mui-table-view-cell" title="Marry"><img src='img/3.jpg'> Marry</li>
+						<li id="N" class="mui-table-view-divider">N</li>
+						<li class="mui-table-view-cell" title="Nicole"><img src='img/1.jpg'> Nicole</li>
+						<li class="mui-table-view-cell" title="Nike"><img src='img/2.jpg'> Nike</li>
+						<li class="mui-table-view-cell" title="Nice"><img src='img/3.jpg'> Nice</li>
+						<li id="O" class="mui-table-view-divider">O</li>
+						<li class="mui-table-view-cell" title="Oscar"><img src='img/1.jpg'> Oscar</li>
+						<li class="mui-table-view-cell" title="Okub"><img src='img/2.jpg'> Okub</li>
+						<li class="mui-table-view-cell" title="Oliver"><img src='img/3.jpg'> Oliver</li>
+						<li id="P" class="mui-table-view-divider">P</li>
+						<li class="mui-table-view-cell" title="Polly"><img src='img/1.jpg'> Polly</li>
+						<li class="mui-table-view-cell" title="Plang"><img src='img/2.jpg'> Plang</li>
+						<li class="mui-table-view-cell" title="Puonly"><img src='img/3.jpg'> Puonly</li>
+						<li id="Q" class="mui-table-view-divider">Q</li>
+						<li class="mui-table-view-cell" title="Qunce"><img src='img/1.jpg'> Qunce</li>
+						<li class="mui-table-view-cell" title="Qunlly"><img src='img/2.jpg'> Qunlly</li>
+						<li class="mui-table-view-cell" title="QQ"><img src='img/3.jpg'> QQ</li>
+						<li id="R" class="mui-table-view-divider">R</li>
+						<li class="mui-table-view-cell" title="Rice"><img src='img/1.jpg'> Rice</li>
+						<li class="mui-table-view-cell" title="Rimen"><img src='img/2.jpg'> Rimen</li>
+						<li class="mui-table-view-cell" title="Remark"><img src='img/3.jpg'> Remark</li>
+						<li id="S" class="mui-table-view-divider">S</li>
+						<li class="mui-table-view-cell" title="Sunny"><img src='img/1.jpg'> Sunny</li>
+						<li class="mui-table-view-cell" title="Symon"><img src='img/2.jpg'> Symon</li>
+						<li class="mui-table-view-cell" title="Sola"><img src='img/3.jpg'> Sola</li>
+						<li id="T" class="mui-table-view-divider">T</li>
+						<li class="mui-table-view-cell" title="Tom"><img src='img/1.jpg'> Tom</li>
+						<li class="mui-table-view-cell" title="Tony"><img src='img/2.jpg'> Tony</li>
+						<li class="mui-table-view-cell" title="Toky"><img src='img/3.jpg'> Toky</li>
+						<li id="U" class="mui-table-view-divider">U</li>
+						<li class="mui-table-view-cell" title=Uber><img src='img/1.jpg'> Uber</li>
+						<li class="mui-table-view-cell" title="Uuid"><img src='img/2.jpg'> Uuid</li>
+						<li class="mui-table-view-cell" title="Uname"><img src='img/3.jpg'> Uname</li>
+						<li id="V" class="mui-table-view-divider">V</li>
+						<li class="mui-table-view-cell" title="Vioce"><img src='img/1.jpg'> Vioce</li>
+						<li class="mui-table-view-cell" title="Voly"><img src='img/2.jpg'> Voly</li>
+						<li class="mui-table-view-cell" title="Vivian"><img src='img/3.jpg'> Vivian</li>
+						<li id="W" class="mui-table-view-divider">W</li>
+						<li class="mui-table-view-cell" title="Wang"><img src='img/1.jpg'> Wang</li>
+						<li class="mui-table-view-cell" title="Wayte"><img src='img/2.jpg'> Wayte</li>
+						<li class="mui-table-view-cell" title="ww"><img src='img/3.jpg'> ww</li>
+						<li id="X" class="mui-table-view-divider">X</li>
+						<li class="mui-table-view-cell" title="Xiaoming"><img src='img/1.jpg'> Xiaoming</li>
+						<li class="mui-table-view-cell" title="XX"><img src='img/2.jpg'> XX</li>
+						<li class="mui-table-view-cell" title="Xiaorui"><img src='img/3.jpg'> Xiaorui</li>
+						<li id="Y" class="mui-table-view-divider">Y</li>
+						<li class="mui-table-view-cell" title="Yellow"><img src='img/1.jpg'> Yellow</li>
+						<li class="mui-table-view-cell" title="Yasmin"><img src='img/2.jpg'> Yasmin</li>
+						<li class="mui-table-view-cell" title="Yes"><img src='img/3.jpg'> Yes</li>
+						<li id="Z" class="mui-table-view-divider">Z</li>
+						<li class="mui-table-view-cell" title="Zive"><img src='img/1.jpg'> Zive</li>
+						<li class="mui-table-view-cell" title="Zero"><img src='img/2.jpg'> Zero</li>
+						<li class="mui-table-view-cell" title="ZZ"><img src='img/3.jpg'> ZZ</li>
+						<li id="ZZ" class="mui-table-view-divider">#</li>
+						<li class="mui-table-view-cell" title="№№▲"><img src='img/1.jpg'> №№▲</li>
+						<li class="mui-table-view-cell" title="◎◎"><img src='img/2.jpg'> ◎◎</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+
 		<script type="text/javascript">
-			mui.init()
+			mui.init();
+			mui.ready(function() {
+				mui('.mui-table-view').on('tap', '.mui-table-view-cell', function() {
+					mui.openWindow({
+						url: 'subCharts.html',
+						id: 'subCharts.html',
+						style: {},
+						extras: {
+							title: this.getAttribute('title')
+						},
+						show: {
+							autoShow: true,
+							aniShow: 'slide-in-right',
+							duration: 100
+						}
+					})
+				})
+			});
 		</script>
 	</body>
 

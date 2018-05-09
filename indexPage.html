@@ -35,7 +35,7 @@
 			<div class="mui-scroll">
 				<!--这里放置真实显示的DOM内容-->
 				<ul class="mui-table-view mui-table-view-chevron myContent">
-					<li class="mui-table-view-cell mui-media">
+					<li class="mui-table-view-cell mui-media" title="幸福">
 						<a href="javascript:;">
 							<img class="mui-media-object mui-pull-left" src="img/1.jpg">
 							<div class="mui-media-body">
@@ -44,7 +44,7 @@
 							</div>
 						</a>
 					</li>
-					<li class="mui-table-view-cell mui-media">
+					<li class="mui-table-view-cell mui-media" title="木屋">
 						<a href="javascript:;">
 							<img class="mui-media-object mui-pull-left" src="img/10.jpg">
 							<div class="mui-media-body">
@@ -53,7 +53,7 @@
 							</div>
 						</a>
 					</li>
-					<li class="mui-table-view-cell mui-media">
+					<li class="mui-table-view-cell mui-media" title="CBD">
 						<a href="javascript:;">
 							<img class="mui-media-object mui-pull-left" src="img/3.jpg">
 							<div class="mui-media-body">
@@ -62,16 +62,16 @@
 							</div>
 						</a>
 					</li>
-					<li class="mui-table-view-cell mui-media">
+					<li class="mui-table-view-cell mui-media" title="西瓜">
 						<a href="javascript:;">
 							<img class="mui-media-object mui-pull-left" src="img/9.jpg">
 							<div class="mui-media-body">
-								木屋
+								西瓜
 								<p class="mui-ellipsis">想要这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖.</p>
 							</div>
 						</a>
 					</li>
-					<li class="mui-table-view-cell mui-media">
+					<li class="mui-table-view-cell mui-media" title="哈哈">
 						<a href="javascript:;">
 							<img class="mui-media-object mui-pull-left" src="img/8.jpg">
 							<div class="mui-media-body">
@@ -80,7 +80,7 @@
 							</div>
 						</a>
 					</li>
-					<li class="mui-table-view-cell mui-media">
+					<li class="mui-table-view-cell mui-media" title="唐唐">
 						<a href="javascript:;">
 							<img class="mui-media-object mui-pull-left" src="img/7.jpg">
 							<div class="mui-media-body">
@@ -89,7 +89,7 @@
 							</div>
 						</a>
 					</li>
-					<li class="mui-table-view-cell mui-media">
+					<li class="mui-table-view-cell mui-media" title="小明">
 						<a href="javascript:;">
 							<img class="mui-media-object mui-pull-left" src="img/6.jpg">
 							<div class="mui-media-body">
@@ -98,16 +98,16 @@
 							</div>
 						</a>
 					</li>
-					<li class="mui-table-view-cell mui-media">
+					<li class="mui-table-view-cell mui-media" title="Jonas">
 						<a href="javascript:;">
 							<img class="mui-media-object mui-pull-left" src="img/5.jpg">
 							<div class="mui-media-body">
-								木屋
+								Jonas
 								<p class="mui-ellipsis">想要这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖.</p>
 							</div>
 						</a>
 					</li>
-					<li class="mui-table-view-cell mui-media">
+					<li class="mui-table-view-cell mui-media" title="(♥∀♥)">
 						<a href="javascript:;">
 							<img class="mui-media-object mui-pull-left" src="img/4.jpg">
 							<div class="mui-media-body">
@@ -185,6 +185,21 @@
     				}
     			});
     		};
+    		$('.myContent').on('tap', '.mui-table-view-cell', function() {
+				mui.openWindow({
+					url: 'subCharts.html',
+					id: 'subCharts.html',
+					style: {},
+					extras: {
+						title: this.getAttribute('title')
+					},
+					show: {
+						autoShow: true,
+						aniShow: 'slide-in-right',
+						duration: 100
+					}
+				})
+			});
 		</script>
 	</body>
 

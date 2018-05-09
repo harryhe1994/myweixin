@@ -1,0 +1,24 @@
+.mui-bar {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.myList img {
+	vertical-align: middle;
+	width: 30px;
+	height: 30px;
+}
+
+.list-bar {
+	position: fixed;
+	right: 5px;
+	z-index: 999;
+}
+
+.list-bar a {
+	text-align: center;
+	display: block;
+	font-size: 12px;
+	line-height: 18px;
+	color: #222222;
+}

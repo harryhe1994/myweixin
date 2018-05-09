@@ -9,5 +9,16 @@
       "mailList.html",
       "myInfo.html"
     ]
+  },
+  "indexPage.html": {
+    "refer": [
+      "subCharts.html"
+    ],
+    "resources": []
+  },
+  "mailList.html": {
+    "refer": [
+      "subCharts.html"
+    ]
   }
 }

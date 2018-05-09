@@ -1,0 +1,13 @@
+{
+  "index.html": {
+    "resources": [
+      "indexPage.html"
+    ],
+    "refer": [
+      "indexPage.html",
+      "find.html",
+      "mailList.html",
+      "myInfo.html"
+    ]
+  }
+}

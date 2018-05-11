@@ -119,6 +119,28 @@
 				</ul>
 			</div>
 		</div>
+		<div id="topPopover" class="mui-popover">
+			<div class="mui-popover-arrow"></div>
+			<div class="mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<ul class="mui-table-view">
+						<li class="mui-table-view-cell">
+							<a href="#"><i class="mui-icon mui-icon-chatbubble"></i> 发起群聊</a>
+						</li>
+						<li class="mui-table-view-cell" id="add">
+							<a href="#"><i class="mui-icon mui-icon-personadd"></i> 添加朋友</a>
+						</li>
+						<li class="mui-table-view-cell" id="barcode">
+							<a href="#"><i class="mui-icon mui-icon-spinner mui-spin"></i> 扫一扫</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a href="#"><i class="mui-icon mui-icon-checkmarkempty"></i> 收付款</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	
 
 		<script type="text/javascript">
 			mui.init({
@@ -141,6 +163,12 @@
 						callback: pullfreshUp //必选，刷新函数，根据具体业务来编写，比如通过ajax从服务器获取新数据；
 					}
 				}
+			});
+			
+			mui.plusReady(function(){
+				window.addEventListener('topPopover', function(event){
+					mui('#topPopover').popover('toggle');
+				});
 			});
 
 			function pullfreshDown() {
